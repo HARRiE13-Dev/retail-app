@@ -20,16 +20,12 @@ type Props = {
   setIsActiveOnMobile: (...arg: any) => void;
 };
 
-const Sidebar = ({
-  isActive,
-  setIsActive,
-  collapse,
-  setCollapse,
-  isActiveOnMobile,
-  setIsActiveOnMobile,
-}: Props) => {
+const Sidebar = () => {
   // Sub Menu Mockup
   const [items, setItems] = useState([1, 2, 3, 4]);
+  const [isActive, setIsActive] = useState<any>();
+  const [collapse, setCollapse] = useState<any>();
+  const [isActiveOnMobile, setIsActiveOnMobile] = useState<any>();
 
   // Toggle Collapse
   const toggleCollapse = (menu: any) => {
@@ -73,7 +69,7 @@ const Sidebar = ({
         className={`${isActive ? "sidebar" : "active"} ${isActiveOnMobile ? "visually-hidden" : ""
           } navbar-nav border bg-white`}
 
-        style={{  zIndex: '1', height: '100%', borderRadius: '40px 0px 0px' }}
+        style={{ zIndex: '1', height: '100%', borderRadius: '40px 0px 0px' }}
       >
         {/* Side Header */}
         <div className="d-flex sidebar-brand align-items-center justify-content-center">
