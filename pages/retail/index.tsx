@@ -5,12 +5,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import { Button } from 'react-bootstrap';
 
 const welcome = () => {
   return (
     <>
-      <div style={{ background: '#FCEFF1' }}>
-        <Container style={{top:'50%'}} fluid="md">
+      <div className='p-4' style={{ background: '#FCEFF1', zIndex: '1' }}>
+        <div className='background-welcome'></div>
+        <Container style={{ top: '50%' }} fluid="md">
           <Row className='text-center'>
             <Col>
               <h1 className='fw-bold' style={{ fontSize: '80px', color: '#C20B0F' }}>
@@ -45,7 +47,7 @@ const welcome = () => {
                         <Image
                           src="/image/icon-makro.png"
                           alt="r"
-                          width={200}
+                          width={150}
                           height={40}
                         />
                       </Card>
@@ -64,9 +66,9 @@ const welcome = () => {
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
                           src="/image/icon-coke.png"
-                          alt="r"
-                          width={200}
-                          height={40}
+                          alt=""
+                          width={150}
+                          height={55}
                         />
                       </Card>
                       <Card.Title >15% Cashback
@@ -83,10 +85,10 @@ const welcome = () => {
                     <Card.Body>
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
-                          src="/image/icon-makro.png"
-                          alt="r"
-                          width={200}
-                          height={40}
+                          src="/image/icon-pepsi.png"
+                          alt=""
+                          width={150}
+                          height={55}
                         />
                       </Card>
                       <Card.Title >15% Cashback
@@ -103,9 +105,9 @@ const welcome = () => {
                     <Card.Body>
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
-                          src="/image/icon-makro.png"
-                          alt="r"
-                          width={200}
+                          src="/image/icon-lotus.png"
+                          alt=""
+                          width={150}
                           height={40}
                         />
                       </Card>
@@ -127,10 +129,10 @@ const welcome = () => {
                     <Card.Body>
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
-                          src="/image/icon-makro.png"
+                          src="/image/icon-cp.png"
                           alt="r"
-                          width={200}
-                          height={40}
+                          width={100}
+                          height={100}
                         />
                       </Card>
                       <Card.Title >15% Cashback
@@ -147,10 +149,10 @@ const welcome = () => {
                     <Card.Body>
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
-                          src="/image/icon-makro.png"
+                          src="/image/icon-pg.jpg"
                           alt="r"
-                          width={200}
-                          height={40}
+                          width={100}
+                          height={100}
                         />
                       </Card>
                       <Card.Title >15% Cashback
@@ -167,10 +169,10 @@ const welcome = () => {
                     <Card.Body>
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
-                          src="/image/icon-makro.png"
+                          src="/image/icon-unilever.png"
                           alt="r"
-                          width={200}
-                          height={40}
+                          width={100}
+                          height={80}
                         />
                       </Card>
                       <Card.Title >15% Cashback
@@ -187,10 +189,10 @@ const welcome = () => {
                     <Card.Body>
                       <Card className="border-0 d-flex justify-content-center align-items-center" style={{ height: '10rem' }}>
                         <Image
-                          src="/image/icon-makro.png"
+                          src="/image/icon-nestle.png"
                           alt="r"
-                          width={200}
-                          height={40}
+                          width={100}
+                          height={100}
                         />
                       </Card>
                       <Card.Title >15% Cashback
@@ -203,7 +205,17 @@ const welcome = () => {
               </div>
             </div>
           </Row>
+          <Row className='text-left mt-4'>
+            <div className='d-flex justify-content-center align-items-center gap-4'>
+              <div>
+   
+                  <Button variant="primary">Primary</Button>
+              
+              </div>
+            </div>
+          </Row>
         </Container>
+
       </div>
     </>
   )
