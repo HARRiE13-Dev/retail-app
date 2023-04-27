@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Layout from '@/layout/Layout';
 import { Carousel } from 'react-bootstrap';
 
-const welcome = () => {
+const Sales = () => {
   return (
     <>
       <Layout>
@@ -233,4 +233,4 @@ const welcome = () => {
   )
 }
 
-export default welcome
+export default Sales
