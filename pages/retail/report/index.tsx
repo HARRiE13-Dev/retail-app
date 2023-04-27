@@ -16,11 +16,11 @@ const Report = () => {
         <div className='p-4' style={{ background: '#F8F8F8', zIndex: '1' }}>
           <Container style={{ top: '50%' }} fluid>
             <Row className='text-center'>
-              {/* -------------------- report P'Opal-------------------- */}
 
+              <Container className='mt-10' fluid="md" align-items="center">
+                <iframe src="https://lookerstudio.google.com/embed/reporting/8aa3a42f-9424-4b82-b00d-10fe4748662b" style={{display: "block", border: "none", width:"100%", height:"100vh" }}></iframe>
+              </Container>
 
-              
-              {/* ------------------------------------------------------ */}
             </Row>
           
           </Container>
