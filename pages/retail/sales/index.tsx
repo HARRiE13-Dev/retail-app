@@ -9,7 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Layout from '@/layout/Layout';
 import { Carousel } from 'react-bootstrap';
 
-const welcome = () => {
+const Sales = () => {
   return (
     <>
       <Layout>
@@ -218,8 +218,7 @@ const welcome = () => {
                     </div>
                   </div>
                   <div className='d-flex flex-column'>
-                    <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>
-
+                    <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>F
                       <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
                     </div>
                   </div>
@@ -233,4 +232,4 @@ const welcome = () => {
   )
 }
 
-export default welcome
+export default Sales
