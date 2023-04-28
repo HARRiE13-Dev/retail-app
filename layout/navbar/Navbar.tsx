@@ -9,16 +9,39 @@ import Image from 'next/image'
 import { Card } from 'react-bootstrap';
 
 const Navbars = () => {
+    // Create a new Date object
+    const currentDate = new Date();
+
+    // Define an array of month names
+    const monthNames = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+
+    // Get the day, month, and year values from the Date object
+    const day = currentDate.getDate();
+    const monthIndex = currentDate.getMonth();
+    const year = currentDate.getFullYear();
+
+    // Format the day and year values as strings
+    const dayStr = day < 10 ? `0${day}` : `${day}`;
+    const yearStr = year.toString();
+
+    // Get the month name from the array
+    const monthName = monthNames[monthIndex];
+
+    const formattedDate = `${dayStr} ${monthName} ${yearStr}`;
+
     return (
         <Navbar bg="light" expand="lg" style={{ padding: 20 }}>
             <Container fluid>
                 <div className='d-flex flex-column'>
                     <Navbar.Brand className="m-0" href="#">
                         <h3>
-                            Welcome, xxx
+                            Welcome, Keera
                         </h3>
                     </Navbar.Brand>
-                    <h5 className='text-muted'>xx xxx xxx</h5>
+                    <h5 className='text-muted'>{formattedDate}</h5>
                 </div>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

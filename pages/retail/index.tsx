@@ -5,7 +5,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import { Button } from 'react-bootstrap';
+import Link from 'next/link'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const welcome = () => {
   return (
@@ -15,7 +20,7 @@ const welcome = () => {
         <Container style={{ top: '50%' }} fluid="md">
           <Row className='text-center'>
             <Col>
-              <h1 className='fw-bold' style={{ fontSize: '80px', color: '#C20B0F' }}>
+              <h1 className='fw-bold' style={{ fontSize: '80px', color: '#C20B0F'}}>
                 Greetings !
               </h1>
             </Col>
@@ -205,15 +210,26 @@ const welcome = () => {
               </div>
             </div>
           </Row>
-          <Row className='text-left mt-4'>
-            <div className='d-flex justify-content-center align-items-center gap-4'>
+          <Row className='text-left mt-4 position-relative' style={{ right: '8%' }}>
+            <div className='d-flex justify-content-end align-items-end gap-4'> 
               <div>
-   
-                  <Button variant="primary">Primary</Button>
-              
+                <Col>
+                  <Link href="/retail/sales" style={{ textDecoration: 'none' }}>
+                    <Card className='shadow border-0 rounded-pill' style={{ width: '12rem' }}>
+                      <Card.Body>
+                        <div className='fs-5 fw-bold px-2 text-center' style={{ textDecoration: 'none', color: '#C20B0F' }} >
+                          Checkout
+                          <FontAwesomeIcon className="pl-2" icon={faChevronCircleRight} style={{ fontSize: '18px' }} />
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Link>
+                </Col>
               </div>
+
             </div>
           </Row>
+
         </Container>
 
       </div>

@@ -676,3 +676,17 @@ footer a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.underline {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+
+.active-border {
+  border-bottom: 2px solid #C20B0F !important;
+  color : #C20B0F !important
+}
+
+.deactive-border {
+  border-bottom: 2px solid rgb(202, 202, 202) !important;
+  color: rgb(202, 202, 202) !important;
+}

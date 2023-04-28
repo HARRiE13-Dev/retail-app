@@ -75,7 +75,7 @@ const Sales = () => {
                       className='d-block'
                     />
                   </div>
-                  <p className='text-danger fw-semibold fs-5 list-unstyled'>Sales</p>
+                  <p className='text-danger fw-semibold fs-5 list-unstyled underline'>Sales</p>
                 </div>
                 <div className='d-flex flex-column gap-4'>
                   <div className="p-4 rounded-circle border border-danger" style={{ backgroundColor: '#FCEFF2' }}>
@@ -120,7 +120,6 @@ const Sales = () => {
           <Container className='mt-10' fluid="md">
             <div className="d-flex px-4 gap-2">
               <div className='d-flex flex-column gap-4 mr-auto'>
-
                 <p className='text-dark fw-normal fs-5'>Transection!</p>
               </div>
               <div className='d-flex flex-column'>
@@ -176,7 +175,6 @@ const Sales = () => {
                   </div>
                   <div className='d-flex flex-column'>
                     <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>
-
                       <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
                     </div>
                   </div>
@@ -218,7 +216,7 @@ const Sales = () => {
                     </div>
                   </div>
                   <div className='d-flex flex-column'>
-                    <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>F
+                    <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>
                       <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
                     </div>
                   </div>
