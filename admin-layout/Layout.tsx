@@ -5,7 +5,6 @@ import StatusBarAdmin from "./sidebar/StatusBar";
 
 const LayoutAdmin = (props: { children: any }) => {
   //SideBar
-
   return (
     <>
 

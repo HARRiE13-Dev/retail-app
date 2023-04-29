@@ -413,6 +413,8 @@ const StatusBarAdmin = () => {
         </Container >
       </>
     )
+  } else {
+    return null
   }
 
 }

@@ -419,6 +419,8 @@ const StatusBar = () => {
         </Container >
       </>
     )
+  } else {
+    return null
   }
 
 }
