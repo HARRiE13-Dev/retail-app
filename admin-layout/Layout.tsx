@@ -1,27 +1,29 @@
 import React from "react";
-import Sidebar from "./sidebar/Sidebar";
-import Navbars from "./navbar/Navbar";
-import StatusBar from "./sidebar/StatusBar";
+import SidebarAdmin from "./sidebar/Sidebar";
+import NavbarsAdmin from "./navbar/Navbar";
+import StatusBarAdmin from "./sidebar/StatusBar";
 
-const Layout = (props: { children: any }) => {
+const LayoutAdmin = (props: { children: any }) => {
   //SideBar
 
   return (
     <>
+
       <div className="d-flex flex-row w-100 position-relative" style={{ background: '#F8F8F8', zIndex: '1' }}>
         <div className="flex-shrink-1">
-          <Sidebar />
+          <SidebarAdmin />
         </div>
         <div className="w-75">
-          <Navbars />
+          <NavbarsAdmin />
           {props.children}
         </div>
         <div className="w-25 bg-white status-bar">
-          <StatusBar />
+          <StatusBarAdmin />
         </div>
       </div>
+
     </>
   );
 };
 
-export default Layout;
+export default LayoutAdmin;

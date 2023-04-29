@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-const StatusBar = () => {
+const StatusBarAdmin = () => {
   const [orderPage, setOrderPage] = useState<any>(0);
 
   const [cash, setCash] = useState<any>(true);
@@ -68,7 +68,7 @@ const StatusBar = () => {
     event.preventDefault();
     if (product === '11101') {
       setShow1(true)
-      setPrice1(117)
+      setPrice1(117.00)
     } else if (product === '11102') {
       setShow2(true)
       setPrice2(265)
@@ -86,18 +86,17 @@ const StatusBar = () => {
           <div className="d-flex flex-column gap-2 h-100">
             <div className='d-flex flex-column justify-content-center'>
               <p className='text-danger fs-6 fw-semibold'>
-                Avaliable !
+                Notification
               </p>
               <div>
                 <img
                   className='d-block'
-                  src="/image/icon-available.png"
+                  src="/notification.png"
                   alt=""
+                  width='300'
+                  height='240'
                 />
               </div>
-            </div>
-            <div className='d-flex mt-auto justify-content-end'>
-              <button onClick={() => addItemsOrder(1)} type="button" className="btn btn-danger w-10 h-10 rounded-circle mb-4">+</button>
             </div>
           </div>
         </Container>
@@ -131,11 +130,6 @@ const StatusBar = () => {
                   </div>
                 </div>
               </Form>
-            </div>
-            <div>
-              <p className='fw-bold text-danger'>
-                Order Number : 5231235567
-              </p>
             </div>
             <div className='d-flex flex-row justify-content-center align-items-center'>
               <div className={`${show1 === true ? '' : 'd-none'} d-flex w-100 gap-2 align-items-center justify-content-start`}>
@@ -423,4 +417,4 @@ const StatusBar = () => {
 
 }
 
-export default StatusBar
+export default StatusBarAdmin

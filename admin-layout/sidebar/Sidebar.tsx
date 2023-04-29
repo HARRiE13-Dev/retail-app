@@ -22,7 +22,7 @@ type Props = {
   setIsActiveOnMobile: (...arg: any) => void;
 };
 
-const Sidebar = () => {
+const SidebarAdmin = () => {
   // Sub Menu Mockup
   const [items, setItems] = useState([1, 2, 3, 4]);
   const [isActive, setIsActive] = useState<any>();
@@ -74,15 +74,15 @@ const Sidebar = () => {
         style={{ zIndex: '1', height: '100%', borderRadius: '40px 0px 0px' }}
       >
         {/* Side Header */}
-        <Link href="/retail/sales" className='mt-0 mb-0'>
-        <div className="d-flex sidebar-brand align-items-center justify-content-center">
-          <img
-            className=" p-1 mt-4"
-            src="/image/logo1.png"
-            alt=""
-            width="50"
-          />
-        </div>
+        <Link href="/retail/admin" className='mt-0 mb-0'>
+          <div className="d-flex sidebar-brand align-items-center justify-content-center">
+            <img
+              className=" p-1 mt-4"
+              src="/image/logo1.png"
+              alt=""
+              width="50"
+            />
+          </div>
         </Link>
 
         <div
@@ -104,7 +104,7 @@ const Sidebar = () => {
                 }`}
             >
               <div className="align-items-center btn-sidebar p-2 rounded">
-                <FontAwesomeIcon icon={faHouse} style={{ fontSize: '20px' }} />
+                {/* <FontAwesomeIcon icon={faHouse} style={{ fontSize: '20px' }} /> */}
                 <span className={`${isActive ? "" : "visually-hidden"} pl-2`}>
                   Dashboard
                 </span>
@@ -219,4 +219,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarAdmin;

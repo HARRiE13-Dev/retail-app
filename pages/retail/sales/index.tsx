@@ -8,6 +8,7 @@ import Card from 'react-bootstrap/Card';
 
 import Layout from '@/layout/Layout';
 import { Carousel } from 'react-bootstrap';
+import Link from 'next/link'
 
 const Sales = () => {
   return (
@@ -78,16 +79,18 @@ const Sales = () => {
                   <p className='text-danger fw-semibold fs-5 list-unstyled underline'>Sales</p>
                 </div>
                 <div className='d-flex flex-column gap-4'>
-                  <div className="p-4 rounded-circle border border-danger" style={{ backgroundColor: '#FCEFF2' }}>
-                    <Image
-                      src="/image/icon-report.png"
-                      alt=""
-                      width={50}
-                      height={50}
-                      className='d-block'
-                    />
-                  </div>
-                  <p className='text-danger fw-semibold fs-5'>Report</p>
+                  <Link href="/retail/report" className='mt-0 mb-0'>
+                    <div className="p-4 rounded-circle border border-danger" style={{ backgroundColor: '#FCEFF2' }}>
+                      <Image
+                        src="/image/icon-report.png"
+                        alt=""
+                        width={50}
+                        height={50}
+                        className='d-block mb-0'
+                      />
+                    </div>
+                  </Link>
+                  <p className='text-danger fw-semibold fs-5'>Dashboard</p>
                 </div>
                 <div className='d-flex flex-column gap-4'>
                   <div className="p-4 rounded-circle border border-secondary bg-light" >
@@ -125,7 +128,7 @@ const Sales = () => {
               <div className='d-flex flex-column'>
                 <div className='p-2 border border-danger d-flex flex-column rounded' style={{ minWidth: '150px', backgroundColor: '#FCEFF2' }}>
                   <p className='text-dark mb-1 fw-normal'>Revenue</p>
-                  <p className='text-danger  fs-5 mb-0 fw-semibold' style={{ textAlign: 'right' }}>10,456 -</p>
+                  <p className='text-danger  fs-5 mb-0 fw-semibold' style={{ textAlign: 'right' }}>10,456.00 -</p>
                 </div>
               </div>
               <div className='d-flex flex-column'>
@@ -175,7 +178,7 @@ const Sales = () => {
                   </div>
                   <div className='d-flex flex-column'>
                     <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>
-                      <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
+                      <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655.00 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
                     </div>
                   </div>
                 </div>
@@ -217,7 +220,7 @@ const Sales = () => {
                   </div>
                   <div className='d-flex flex-column'>
                     <div className='p-4 d-flex flex-column rounded' style={{ width: '100%', minWidth: '150px', backgroundColor: '#FCEFF2' }}>
-                      <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
+                      <p className='text-danger fs-5 mb-0 text-center fw-semibold'>655.00 <span className='fw-normal text-secondary fs-5'>บาท</span> </p>
                     </div>
                   </div>
                 </div>
