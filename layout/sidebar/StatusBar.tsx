@@ -66,12 +66,14 @@ const StatusBar = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    if (product === '11101') {
+    if (product === '8850779747987') {
       setShow1(true)
       setPrice1(117)
-    } else if (product === '11102') {
+      setProduct('')
+    } else if (product === '8850007850229') {
       setShow2(true)
       setPrice2(265)
+      setProduct('')
     }
 
   };
